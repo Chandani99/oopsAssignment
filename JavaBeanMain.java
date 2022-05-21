@@ -8,8 +8,16 @@ public class JavaBeanMain {
 		String name=sc.nextLine();
 		System.out.println("Enter Age");
 		int age=sc.nextInt();
+		if(age<16&& age>60) {
+			System.out.println("Invalid age.");
+			age=sc.nextInt();
+		}
 		System.out.println("Enter Roll Number");
 		int marks=sc.nextInt();
+		if(0>marks&& marks>500) {
+			System.out.println("Invalid age.");
+			age=sc.nextInt();
+		}
 		System.out.println("Enter Marks");
 		int roll=sc.nextInt();
 		
