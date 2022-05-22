@@ -8,23 +8,25 @@ public class JavaBeanMain {
 		String name=sc.nextLine();
 		System.out.println("Enter Age");
 		int age=sc.nextInt();
-		if(age<16&& age>60) {
-			System.out.println("Invalid age.");
-			age=sc.nextInt();
-		}
 		System.out.println("Enter Roll Number");
-		int marks=sc.nextInt();
-		if(0>marks&& marks>500) {
-			System.out.println("Invalid age.");
-			age=sc.nextInt();
-		}
-		System.out.println("Enter Marks");
 		int roll=sc.nextInt();
+		System.out.println("Enter Marks");
+		int marks=sc.nextInt();
 		
-		_JavaBean jb1=new _JavaBean(roll,name,age,marks);
-		jb1.showDetails();
+		_JavaBean jb1=new _JavaBean();
+		
+		
+			    jb1.setMarks(marks);
+				jb1.setAge(age);
+				jb1.setName(name);
+				jb1.setRoll(roll);
+				jb1.showDetails();
+		 
+		_JavaBean jb2=new _JavaBean(24,"Vandana",22,450);
+		jb2.showDetails();
 		//_JavaBean jb2=new _JavaBean();
 		// TODO Auto-generated method stub
+	
 
 	}
 

@@ -6,6 +6,7 @@ public class _JavaBean {
   private  int age;
   private  int marks;
 
+  public _JavaBean() {}
   public _JavaBean(int roll2, String name2, int age2, int marks2) {
 	  this.roll=roll2;
 	  this.name=name2;
@@ -31,7 +32,10 @@ public void setName(String name) { //Setting the name.
   }
   
   public void setAge(int age) {
+	 if(age>18 && age<60) {
 	  this.age=age;
+	 }
+	  
   }
   
   public int getAge() {
@@ -39,7 +43,9 @@ public void setName(String name) { //Setting the name.
   }
   
   public void setMarks(int marks) {
+	  if(marks>0 && marks<=500) {
 	  this.marks=marks;
+	  }  
   }
   public int getMarks() {
 	  return marks;
